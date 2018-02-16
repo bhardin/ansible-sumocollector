@@ -3,7 +3,7 @@
   register: sumologic_collector_deb_check
   failed_when: no
 
-- name: 'Download SumoColllector (Debian)'
+- name: 'Download SumoCollector (Debian)'
   get_url:
     url: '{{ sumocollector_installer_deb }}'
     dest: '{{ sumologic_installer_deb_local_file }}'
